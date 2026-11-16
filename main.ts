@@ -76,7 +76,7 @@ async function waitForDone(): Promise<void> {
   }
 }
 
-/** Bound the port, register it, then wait for the env: the whole life of the process. */
+/** Bound the port, register it, then wait for the env: the whole life of the process. Entry point of the forge server. */
 async function main(): Promise<void> {
   const server = createApp();
   await new Promise<void>((resolve, reject) => {
